@@ -59,13 +59,17 @@ a:hover {
   background-image: linear-gradient(to bottom right, $col-yellow 20%, $color-secondary 100%);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  
+  position: relative;
+  z-index: 99;
   // Responsive text purple style
   @include respond(phone) {
     // color:-secondary;
     // -webkit-text-fill-color: transparent;
     // background-image: none;
     // -webkit-text-fill-color: $-color;
+    background-image: none;
+    -webkit-text-fill-color: $color-secondary;
   }
   
   a:hover {
