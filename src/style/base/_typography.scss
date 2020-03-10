@@ -64,9 +64,8 @@ a:hover {
     -webkit-text-fill-color: $color-secondary;
   }
   @include respond(tab-port) {
-    
-    // background-image: none;
-    // -webkit-text-fill-color: $color-secondary;
+    background-image: none;
+    -webkit-text-fill-color: $color-secondary;
   }
   a:hover {
     transform: translateX(2px);

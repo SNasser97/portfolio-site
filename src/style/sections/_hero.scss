@@ -31,11 +31,9 @@
     font-weight: 300;
     margin-bottom: 3.2rem;
     text-align: left;
-    width: 10rem;
+    
     @include respond(tab-land) {
       font-size: 4rem;
-      width: 50rem;
-      text-align: center;
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
@@ -44,7 +42,6 @@
     @include respond(phone) {
       font-size: 2.5rem;
       line-height: 1.5;
-      // overflow:none;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
@@ -54,7 +51,7 @@
   .hero-cta {
     display: flex;
   position: relative;
-  z-index: 99;
+  z-index: 20;
     @include respond(tab-port) {
       justify-content: center;
     }
