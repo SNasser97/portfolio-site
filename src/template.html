@@ -16,17 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!--[if IE]>
-      <style>
-        .load-hidden{
-          visibility:visible;
-        }
-      </style>
-  <![endif]-->
+   
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
     </script>
+
   </head>
 
  
@@ -340,4 +335,14 @@
     </footer>
     <!-- /END Footer Section -->
   </body>
+  <script>
+    if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+      // alert('Hello Microsoft User!');
+      console.log(document.getElementsByClassName("load-hidden"));
+      const arr = Array.from(document.querySelector(".load-hidden"));
+      for(let i = 0; i < arr.length; i++) {
+          arr[i].style.visibility="hidden";
+      }
+    }
+  </script>
 </html>
