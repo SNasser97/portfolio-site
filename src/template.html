@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
@@ -17,7 +16,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+    <!--[if IE]>
+      <style>
+        .load-hidden{
+          visibility:visible;
+        }
+      </style>
+  <![endif]-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
@@ -75,7 +80,7 @@
               </p>
               <p class="about-wrapper__info-text">Have a look through my site for more</p>
                 <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1kiKeQyLOaWRhIV0yGmg74OJX-brpsoQi/view?usp=sharing">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1CV_jS0-fJTHUTIMJF2wSrAxAC5VCdgNE/view?usp=sharing">
                   View CV
                 </a>
               </span>

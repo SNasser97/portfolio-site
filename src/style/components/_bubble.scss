@@ -16,12 +16,12 @@
   align-items:center;
   transition: all .2s;
   padding: 1rem;
-
+  
   // background: $white-color-2;
   background-image: linear-gradient(135deg, 
           $col-yellow 10%,
           $color-secondary 40%);
-
+  clip-path:url(#myBubble);
   .bubble__text {
     font-style: italic;
     // color:$color-primary;
