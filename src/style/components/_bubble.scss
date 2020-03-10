@@ -1,0 +1,54 @@
+.bubble {
+  @include respond(tab-land) {
+    display:none;
+  }
+  width: 25rem;
+  
+  height: 12rem;
+  position: absolute;
+  top:-6rem;
+  left: -26rem;
+  border-radius:1rem;
+  display:flex;
+  visibility:hidden;
+  opacity:0;
+  justify-content:center;
+  align-items:center;
+  transition: all .2s;
+  padding: 1rem;
+
+  // background: $white-color-2;
+  background-image: linear-gradient(135deg, 
+          $col-yellow 10%,
+          $color-secondary 40%);
+
+  .bubble__text {
+    font-style: italic;
+    // color:$color-primary;
+    color:$white-color-2;
+  }
+  &:after {
+    content:"";
+    display:block;
+    width: 150px;
+    height: 150px;
+    transform:rotate(25deg);
+    background: $white-color-2;
+    background-image: linear-gradient(
+          135deg, 
+          $col-yellow 0%,
+          $color-secondary 40%);   
+    position: absolute;
+    right:0rem;
+    top:-4rem;
+    z-index: -1;
+    backface-visibility:hidden;
+    clip-path: polygon(73% 80%, 64% 94%, 100% 100%);
+  }
+ 
+}
+.project-wrapper__image:hover .bubble {
+  visibility:visible;
+  opacity:1;
+} 
+

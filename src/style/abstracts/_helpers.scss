@@ -7,3 +7,13 @@
 .load-hidden {
   visibility: hidden;
 }
+
+.to-front {
+	position: relative;
+	z-index: 20;
+}
+
+.mr-4 {
+	margin-right: 4rem;
+}
+

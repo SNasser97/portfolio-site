@@ -8,3 +8,17 @@ section {
     padding-right: 1rem;
   }
 }
+
+.section-title {
+	margin-bottom: 0;
+	color:$white-color;
+	&-line {
+		width: 3rem;
+		height: .5rem;
+		background-color: $col-yellow;
+		margin: 3rem auto;
+		margin-top: 1rem;
+		position: relative;
+		z-index: 20;
+	}
+}

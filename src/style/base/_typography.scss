@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 h1 {
   font-weight: 700;
 }
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: $default-font-size;
 }
 
@@ -23,14 +23,25 @@ a:hover {
 }
 
 .section-title {
-  margin: 0px;
+  margin: 0px auto;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
+  z-index: 20;
+  transition: all .2s !important;
+    text-shadow: 0 2px 1px $dark-grey;
+  backface-visibility: hidden;
+  width: 50%;
 
   @include respond(phone) {
     font-size: 2.8rem;
+  }
+  &:hover {
+    transform: rotate(3deg) scale(1.15);
+    text-shadow: 0 2px 1px $dark-grey;
+    // background: #333;
   }
 }
 
@@ -39,21 +50,25 @@ a:hover {
 }
 
 .text-color-main {
+  font-weight: 700;
+  color:$color-secondary; // fallback
+  -webkit-text-fill-color: none; // fallback
   background-image: linear-gradient(
     135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+    $col-yellow 0%,
+    $color-secondary 40%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   // Responsive text purple style
   @include respond(phone) {
-    background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    // background-image: none;
+    // -webkit-text-fill-color: $secondary-color;
   }
 
-  &:hover {
+  a:hover {
     transform: translateX(2px);
+    color:$white-color;
   }
 }

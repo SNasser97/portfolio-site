@@ -1,0 +1,15 @@
+@keyframes pulsate-rotate {
+	0% {
+		color:$dark-grey;
+		transform: scale(.95) rotate(-12deg);
+	}
+	50% {
+		color: $color-secondary;
+		transform: scale(1.25) rotate(12deg);
+	}
+	100% {
+		color:$dark-grey;
+
+		transform: scale(.95) rotate(-12deg);
+	}
+}

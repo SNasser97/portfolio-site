@@ -3,6 +3,12 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+  background: $color-primary;
+}
+
+::selection {
+	// color:red;
+	background-color: #4DCAF8
 }
