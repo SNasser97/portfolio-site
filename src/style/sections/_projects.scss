@@ -118,7 +118,7 @@ a.project-src:hover {
         justify-content:center;
         // flex-wrap:wrap;
         align-items:center;
-        width:48.999%;
+        // width:48.999%;
         flex-grow:1;
         margin: 0 !important;
     }
@@ -169,4 +169,13 @@ a.project-src:hover {
       } 
     }
    
+}
+
+.grid { // for compare and choose project
+  display: grid;
+  grid-gap:.5rem;
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  grid-template-columns: repeat( auto-fit, minmax(1rem, 14rem) );
 }
