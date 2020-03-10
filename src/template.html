@@ -338,11 +338,9 @@
   <script>
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
       // alert('Hello Microsoft User!');
-      console.log(document.getElementsByClassName("load-hidden"));
-      const arr = Array.from(document.querySelector(".load-hidden"));
-      for(let i = 0; i < arr.length; i++) {
-          arr[i].style.visibility="hidden";
-      }
+      
+      document.querySelector(".load-hidden")[0].style.visibility = "visible";
+      document.querySelector(".load-hidden")[1].style.visibility = "visible";
     }
   </script>
 </html>
