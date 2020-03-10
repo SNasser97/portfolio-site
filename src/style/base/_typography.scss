@@ -65,7 +65,7 @@ a:hover {
   @include respond(phone) {
     color:$color-secondary;
     -webkit-text-fill-color: transparent;
-
+    
     // background-image: none;
     // -webkit-text-fill-color: $secondary-color;
   }

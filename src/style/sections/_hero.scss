@@ -42,6 +42,7 @@
     @include respond(phone) {
       font-size: 2.5rem;
       line-height: 1.5;
+      overflow:none;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
