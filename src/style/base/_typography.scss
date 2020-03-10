@@ -54,24 +54,20 @@ a:hover {
   display:inline;
   color:$color-secondary; // fallback
   -webkit-text-fill-color: $color-secondary; // fallback
-  background-image: -webkit-linear-gradient(top left, $col-yellow 20%, $color-secondary 100%);
-  background-image: -o-linear-gradient(top left, $col-yellow 20%, $color-secondary 100%);
+  background-image: -webkit-linear-gradient(top bottom right, $col-yellow 20%, $color-secondary 100%);
   background-image: linear-gradient(to bottom right, $col-yellow 20%, $color-secondary 100%);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-overflow: clip;
-  position: relative;
-  z-index: 99;
-  // Responsive text purple style
+  
   @include respond(phone) {
-    // color:-secondary;
-    // -webkit-text-fill-color: transparent;
-    // background-image: none;
-    // -webkit-text-fill-color: $-color;
     background-image: none;
     -webkit-text-fill-color: $color-secondary;
   }
-  
+  @include respond(tab-port) {
+    
+    // background-image: none;
+    // -webkit-text-fill-color: $color-secondary;
+  }
   a:hover {
     transform: translateX(2px);
     color:$color-secondary;
