@@ -52,14 +52,14 @@ a:hover {
 .text-color-main {
   font-weight: 700;
   color:$color-secondary; // fallback
-  -webkit-text-fill-color: $color-secondary; // fallback
-  background-image: linear-gradient(
-    135deg,
-    $col-yellow 0%,
-    $color-secondary 40%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-fill-color: $color-secondary; // fallback
+  // background-image: linear-gradient(
+  //   135deg,
+  //   $col-yellow 0%,
+  //   $color-secondary 40%
+  // );
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   
   // Responsive text purple style
   @include respond(phone) {
