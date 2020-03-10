@@ -59,7 +59,7 @@ a:hover {
   background-image: linear-gradient(to bottom right, $col-yellow 20%, $color-secondary 100%);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+  text-overflow: clip;
   position: relative;
   z-index: 99;
   // Responsive text purple style
