@@ -18,11 +18,11 @@ module.exports = {
             options: {
               name: '[name].[hash].[ext]',
               outputPath: 'assets'
-            },
-          },
-        ],
-      },
-    ],
+            }
+          }
+        ]
+      }
+    ]
   },
   // This config allows to use jQuery $ sign
   plugins: [
