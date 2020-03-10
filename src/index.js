@@ -1,7 +1,5 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
-import edgeFix from "./js/edge-fix";
-
 import './style/main.scss';
 
 $('a[href^="#"]').on('click', function(event) {
@@ -21,4 +19,3 @@ $('a[href^="#"]').on('click', function(event) {
 
 initSr();
 initTilt();
-edgeFix();
