@@ -1,9 +1,9 @@
 @import './vendors/bootstrap.scss';
-@import './vendors/IE.scss';
 
 @import './abstracts/mixins';
 @import './abstracts/variables';
 @import './abstracts/helpers';
+@import './vendors/IE.scss'; // IE fixes
 
 @import './base/base';
 @import './base/typography';

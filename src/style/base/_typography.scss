@@ -54,10 +54,11 @@ a:hover {
   display:inline;
   color:$color-secondary; // fallback
   -webkit-text-fill-color: $color-secondary; // fallback
-  background-image: -webkit-linear-gradient(top bottom right, $col-yellow 20%, $color-secondary 40%);
-  background-image: linear-gradient(to bottom right, $col-yellow 20%, $color-secondary 40%);;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @include supportText();
+  // background-image: -webkit-linear-gradient(top bottom right, $col-yellow 20%, $color-secondary 40%);
+  // background-image: linear-gradient(to bottom right, $col-yellow 20%, $color-secondary 40%);;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   
   @include respond(phone) {
     background-image: none;

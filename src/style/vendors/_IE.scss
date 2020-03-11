@@ -1,22 +1,42 @@
 // IE 10 - 11
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	// BUTTON FIX
-	.bubble {display:none;}
+	// disable bubble
+	.bubble {
+        display:none !important;
+    }
+    .project-wrapper__image:hover .bubble {
+        visibility:hidden !important;
+        opacity:0 !important;
+    } 
     .project-wrapper__text-info {
-        	display:block;
+        	display:block !important;
     }
+    // disable wave svg
     .svg {
-        display:none;
-        visibility:hidden;
+        display:none !important;
+        visibility:hidden !important;
     }
-	// CSS LAYOUT
-	
+    // display hero title, ScrollReveal not compatible 
+    .load-hidden{
+        visibility:visible !important;
+    }
+	// button fix
+    .cta-btn--hero {
+        background:transparent;
+        color:$color-secondary;
+    }
+    .cta-btn {
+        background:none;
+        color:$color-secondary;
+    }
 }
 
 // EDGE
 @supports (-ms-ime-align:auto) {
-	.bubble {display:none;}
+	.bubble {
+        display:none !important;
+    }
     .project-wrapper__text-info {
-        	display:block;
+        	display:block !important;
     }
 }
