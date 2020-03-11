@@ -1,0 +1,17 @@
+// IE 10 - 11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	// BUTTON FIX
+	.bubble {display:none;}
+    .project-wrapper__text-info {
+        	display:block;
+    }
+	// CSS LAYOUT
+}
+
+// EDGE
+@supports (-ms-ime-align:auto) {
+	.bubble {display:none;}
+    .project-wrapper__text-info {
+        	display:block;
+    }
+}
