@@ -23,7 +23,9 @@
 	// fill: $color-secondary;
 	// fill: url(.my-cool-gradient) #447799;
 	  fill: url(#my-cool-gradient) $color-secondary;
-
+	&-top {
+		bottom:-1px;
+	}
 	&-bottom {
 		top:-2rem;
 		left:0;
