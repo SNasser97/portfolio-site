@@ -22,8 +22,11 @@
     }
 	// button fix
     .cta-btn--hero {
-        background:transparent;
+        background:transparent !important;
         color:$color-secondary;
+        &:hover {
+            color:$white-color-2 !important;
+        }
     }
     .cta-btn {
         background:none;
