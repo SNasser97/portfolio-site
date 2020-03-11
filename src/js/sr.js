@@ -7,54 +7,48 @@ export default function() {
     mobile: true
   };
 
+  
   /* Section Title */
-  ScrollReveal().reveal('.section-title', {
-    ...defaultProps,
-    delay: 300,
+  ScrollReveal().reveal('.section-title', Object.assign({}, defaultProps, {delay: 300,
     distance: '0px',
-    origin: 'bottom'
-  });
+    origin: 'bottom'}));
 
   /* Hero Section */
-  ScrollReveal().reveal('.hero-title', {
-    ...defaultProps,
-    delay: 500,
-    origin: window.innerWidth > 768 ? 'left' : 'bottom'
-  });
-  ScrollReveal().reveal('.hero-cta', {
-    ...defaultProps,
+
+  ScrollReveal().reveal('.hero-title', Object.assign({}, defaultProps, {delay: 500,
+    origin: window.innerWidth > 768 ? 'left' : 'bottom'}));
+
+  ScrollReveal().reveal('.hero-cta', Object.assign({}, defaultProps,{
     delay: 1000,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
-  });
+  }));
 
   /* About Section */
-  ScrollReveal().reveal('.about-wrapper__image', {
-    ...defaultProps,
+  ScrollReveal().reveal('.about-wrapper__image', Object.assign({}, defaultProps,{
     delay: 600,
     origin: 'bottom'
-  });
-  ScrollReveal().reveal('.about-wrapper__info', {
-    ...defaultProps,
+  }));
+
+  ScrollReveal().reveal('.about-wrapper__info', Object.assign({}, defaultProps,{
     delay: 1000,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
-  });
+  }));
 
   /* Projects Section */
-  ScrollReveal().reveal('.project-wrapper__text', {
-    ...defaultProps,
+  ScrollReveal().reveal('.project-wrapper__text', Object.assign({}, defaultProps, {
+
     delay: 500,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
-  });
-  ScrollReveal().reveal('.project-wrapper__image', {
-    ...defaultProps,
+  }));
+
+  ScrollReveal().reveal('.project-wrapper__image', Object.assign({}, defaultProps, {
     delay: 1000,
     origin: window.innerWidth > 768 ? 'right' : 'bottom'
-  });
+  }));
 
   /* Contact Section */
-  ScrollReveal().reveal('.contact-wrapper', {
-    ...defaultProps,
+  ScrollReveal().reveal('.contact-wrapper', Object.assign({}, defaultProps,{
     delay: 800,
     origin: 'bottom'
-  });
+  }));
 }
