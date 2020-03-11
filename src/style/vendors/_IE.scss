@@ -21,6 +21,7 @@
         visibility:visible !important;
     }
 	// button fix
+    
     .cta-btn--hero {
         background:transparent !important;
         color:$color-secondary;
@@ -32,6 +33,14 @@
         background:none;
         color:$color-secondary;
     }
+    // provide gradient style since svg was disabled
+    #about, #contact {
+    background-image: linear-gradient(
+      135deg, 
+      $col-yellow 0%,
+      $color-secondary 40%) !important;
+    }
+
 }
 
 // EDGE
@@ -41,5 +50,13 @@
     }
     .project-wrapper__text-info {
         	display:block !important;
+    }
+}
+
+// iOS
+.cta-btn {
+    border:1px solid $color-primary;
+    &--hero{
+    border:1px solid $color-primary;
     }
 }
