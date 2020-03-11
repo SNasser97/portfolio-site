@@ -53,10 +53,9 @@
     }
 }
 
-// iOS
-.cta-btn {
-    border:1px solid $color-primary;
-    &--hero{
-    border:1px solid $color-primary;
+// iOS - Safari on mobile
+@media screen and (max-width: 767px) {
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        visibility:visible !important;
     }
 }
