@@ -19,9 +19,10 @@
     // display hero title, ScrollReveal not compatible 
     .load-hidden{
         visibility:visible !important;
+        transform: translateX(0);
+        animation: moveInRight 1s ease-out;
     }
 	// button fix
-    
     .cta-btn--hero {
         background:transparent !important;
         color:$color-secondary;
@@ -33,7 +34,7 @@
         background:none;
         color:$color-secondary;
     }
-    // provide gradient style since svg was disabled
+    // provide gradient style as svg was disabled
     #about, #contact {
     background-image: linear-gradient(
       135deg, 

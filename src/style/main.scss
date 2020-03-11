@@ -3,7 +3,7 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
 @import './abstracts/helpers';
-@import './vendors/IE.scss'; // IE fixes
+@import './vendors/browserFixes.scss'; // IE fixes | iOS | Edge
 
 @import './base/base';
 @import './base/typography';
